@@ -14,7 +14,7 @@ return (
             <a className='pd'><FontAwesomeIcon icon ={faShoppingBag}/></a>
         </span>
         <div className='showItem'>
-            {categories.map((items)=>(<span className='pd'>{items}</span>))}
+            {categories.map((items)=>(<span className='pd' key={items}>{items}</span>))}
         </div>
     </div>
 )

@@ -29,9 +29,9 @@ export default function Home({ products }) {
         {images.map((imgdata)=>{
           // const [image,name]=imgdata;
           return(
-            <div className='flex-col pd-30'>
-            <Image src={`/${imgdata.img}`} width="70" height="70"></Image>
-            <span className='centre'> {imgdata.name} </span>
+            <div className='flex-col pd-30' key={imgdata.name}>
+              <Image src={`/${imgdata.img}`} width="70" height="70"></Image>
+              <span className='centre'> {imgdata.name} </span>
             </div>
           )
         })
